@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>Combust_Injector</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Combust.dll" />
+    <None Remove="Combust.pdb" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Combust.dll" />
+    <EmbeddedResource Include="Combust.pdb" />
+  </ItemGroup>
+
+</Project>
